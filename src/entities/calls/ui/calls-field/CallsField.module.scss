@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 0;
+  color: #122945;
+  border-bottom: 1px solid #eaf0fa;
+  font-size: 15px;
+
+  .types {
+    flex: 0.3;
+  }
+  .time {
+    flex: 0.5;
+  }
+  .employee {
+    flex: 1;
+  }
+  .call {
+    width: 246px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 140%;
+  }
+  .source {
+    width: 197px;
+  }
+  .evaluation {
+    flex: 5;
+  }
+  .duration {
+    flex: 1;
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 482px;
+  border-radius: 48px;
+  border: 1px solid #eaf0fa00;
+  position: relative;
+  left: -13px;
+  padding-right: 20px;
+
+  .start_search {
+    display: flex;
+    align-items: center;
+    input {
+      background-color: rgba(255, 255, 255, 0);
+
+      &::placeholder {
+        color: #5e7793;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+    &__svg {
+    }
+  }
+}
+.active_border {
+  border: 1px solid rgba(0, 0, 255, 0.133);
+}

@@ -1,0 +1,39 @@
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 48px;
+
+  .calendar_center {
+    display: flex;
+    align-items: center;
+    margin: 0 22px;
+  }
+  .value {
+    color: #005ff8;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .calendar_input {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    &__title {
+      color: #122945;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    &__container {
+      display: flex;
+      .calendar_input__value {
+        color: #adbfdf;
+        margin-right: 30px;
+      }
+    }
+  }
+}

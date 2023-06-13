@@ -1,0 +1,17 @@
+.layout_aside {
+  display: inline-block;
+  height: 100vh;
+  background-color: #091336;
+  min-width: 240px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  &__logo {
+    margin-top: 20px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  &__button {
+    padding: 0 20px;
+  }
+}

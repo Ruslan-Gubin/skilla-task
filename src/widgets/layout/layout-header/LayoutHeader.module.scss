@@ -1,0 +1,16 @@
+.layout_header {
+  @media (min-width: 1500px) {
+    padding: 0px 120px;
+  }
+  padding: 0px 20px;
+  height: 64px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .notification_container {
+    max-width: 596px;
+    display: flex;
+    align-items: center;
+  }
+}

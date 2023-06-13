@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 36px;
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    color: #5e7793;
+    line-height: 148%;
+    margin-right: 5px;
+    &:hover {
+      color: #002cfb;
+    }
+  }
+}
+
+.titile_active {
+  color: blue;
+}

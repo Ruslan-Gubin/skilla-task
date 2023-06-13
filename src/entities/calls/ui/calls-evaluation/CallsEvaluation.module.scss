@@ -1,0 +1,42 @@
+%elips {
+  width: 8px;
+  height: 8px;
+  background: #28a879;
+  border-radius: 50%;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.evaluation {
+  border: 1px solid #00a775;
+  color: #00a775;
+  background: #dbf8ef;
+  padding: 6px 8px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.elipse {
+  @extend %elips;
+  margin-right: 25px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 9px;
+    @extend %elips;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 18px;
+    @extend %elips;
+  }
+}

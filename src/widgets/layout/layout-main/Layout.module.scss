@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .content {
+    background: #E5E5E5;
+    flex: 1 ;
+    @media (min-width: 1500px) {
+      padding: 0px 120px;
+      padding-top: 20px;
+    }
+    padding: 0px 20px;
+    padding-top: 20px;
+  }
+}

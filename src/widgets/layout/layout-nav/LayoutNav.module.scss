@@ -1,0 +1,60 @@
+.layoyt_nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 64px;
+
+  .nav_item {
+    padding: 0 12px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.024);
+    }
+    &__text {
+      margin: 0 15px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+  
+  }
+
+  .active {
+    background: rgba(216, 228, 251, 0.32);
+    color: #ffffff;
+    position: relative;
+    &:hover {
+      background: rgba(216, 228, 251, 0.32);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 3px;
+      height: 100%;
+      background: #002cfb;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 10px;
+      width: 8px;
+      height: 8px;
+      background: #ffd500;
+      box-shadow: 0px 3px 8px rgba(237, 218, 1, 0.5);
+      border-radius: 50%;
+    }
+  }
+  .active_text {
+    color: white;
+  }
+}

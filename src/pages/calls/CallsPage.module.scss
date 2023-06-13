@@ -1,0 +1,10 @@
+.home_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .viewer_options {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 34px;
+  }
+}

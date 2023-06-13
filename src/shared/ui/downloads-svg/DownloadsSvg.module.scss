@@ -1,0 +1,8 @@
+.downloads {
+  opacity: 0.2;
+  margin-right: 22px;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

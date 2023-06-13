@@ -1,0 +1,41 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+  h2 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .green {
+    color: #00a775;
+    background: #00a775;
+  }
+  .yellow {
+    color: #ffb800;
+    background: #ffb800;
+  }
+  .red {
+    color: #ea1a4f;
+    background: #ea1a4f;
+  }
+  .span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .proggress {
+    margin-top: 7px;
+    width: 100%;
+    height: 6px;
+    border-radius: 12px;
+    background: #dee6f5;
+    min-width: 156px;
+    position: relative;
+
+    .proccess {
+      position: absolute;
+      height: 100%;
+      border-radius: 12px;
+    }
+  }
+}
