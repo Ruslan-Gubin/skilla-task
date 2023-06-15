@@ -40,4 +40,4 @@ const CallsList = () => {
   );
 };
 
-export default CallsList;
+export { CallsList };

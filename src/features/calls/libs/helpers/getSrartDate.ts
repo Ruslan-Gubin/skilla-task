@@ -1,41 +1,32 @@
+import { formatDateToISO } from "../../../../shared/lib/dateUtils";
 import { PeriodVariant } from "../../model";
 
-const formattedRuTime = new Intl.DateTimeFormat("ru", {
-  year: "numeric",
-  month: "2-digit",
-  day: "2-digit",
-});
 
-export const formattedDate = (date: Date) => {
-  const formattedDate = formattedRuTime.format(date);
-  const year = formattedDate.slice(-4);
-  const mouth = formattedDate.slice(3, 5);
-  const day = formattedDate.slice(0, 2);
-  return `${year}-${mouth}-${day}`;
-};
 
-export const getDate = (period: PeriodVariant) => {
+export const getDate = (period: PeriodVariant): string => {
   const date = new Date();
-  let resultDate = "";
 
   switch (period) {
     case "today":
-      break;
+      return formatDateToISO(date);
+
     case "threeDay":
       date.setDate(date.getDate() - 3);
-      break;
+      return formatDateToISO(date);
+
     case "week":
       date.setDate(date.getDate() - 7);
-      break;
+      return formatDateToISO(date);
+
     case "month":
       date.setMonth(date.getMonth() - 1);
-      break;
+      return formatDateToISO(date);
+
     case "year":
       date.setFullYear(date.getFullYear() - 1);
-      break;
+      return formatDateToISO(date);
+
+    default:
+      throw new Error(`Invalid period value: ${period}`);
   }
-
-  resultDate = formattedDate(date);
-
-  return resultDate;
 };
